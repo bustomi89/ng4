@@ -22,8 +22,13 @@ export class JsonApiService {
   }
 
   private getBaseUrl(){
+    // return location.protocol + '//' + location.hostname + (location.port ? ':'+location.port : '') + '/medical-record/'
     return location.protocol + '//' + location.hostname + (location.port ? ':'+location.port : '') + '/'
   }
+
+  // private getBaseUrl(){
+  //   return location.protocol + '//' + location.hostname + (location.port ? ':'+location.port : '') + '/'
+  // }
 
   private extractData(res:Response) {
     let body = res.json();

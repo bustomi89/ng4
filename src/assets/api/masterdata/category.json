@@ -1,0 +1,43 @@
+{
+    "data": [
+        {
+            "modified_on": "2017-10-13"  ,
+            "modified_by": "USER",
+            "created_on": "2017-10-10" ,
+            "created_by": "USER",
+            "categoryCode": "001",
+            "categoryName": "Category 001",
+            "categoryType": "SYL",
+            "description": "category 001",
+            "discount": 10,
+            "price": 1100000,
+            "size": 10
+        },
+        {
+            "modified_on": "2017-10-13"  ,
+            "modified_by": "USER",
+            "created_on": "2017-10-10" ,
+            "created_by": "USER",
+            "categoryCode": "002",
+            "categoryName": "Category 002",
+            "categoryType": "SZZ",
+            "description": "category 002",
+            "discount": 10,
+            "price": 1100000,
+            "size": 10
+        },
+        {
+            "modified_on": "2017-10-13"  ,
+            "modified_by": "USER",
+            "created_on": "2017-10-10" ,
+            "created_by": "USER",
+            "categoryCode": "003",
+            "categoryName": "Category 003",
+            "categoryType": "SKK",
+            "description": "category 003",
+            "discount": 10,
+            "price": 1100000,
+            "size": 10
+        }
+    ]
+}

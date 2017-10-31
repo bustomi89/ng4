@@ -9,13 +9,22 @@ export const routes: Routes = [
   {
     path: 'clinic',
     loadChildren:'./clinic/clinic.module#ClinicModule',
-  }
-  //,
-  // {
-  //   path: 'category',
-  //   loadChildren:'./category/category.module#CategoryModule',
+  },
+  {
+    path: 'klinik',
+    loadChildren:'./klinik/klinik.module#KlinikModule',
+  }, 
+  {
+    path: 'category',
+    loadChildren:'./category/category.module#CategoryModule',
      
-  // },
+  },
+  {
+    path: 'kategori',
+    loadChildren:'./kategori/kategori.module#KategoriModule',
+     
+  }
+   //,
   // {
   //   path: 'docter',
   //   loadChildren:'./docter/docter.module#DocterModule',

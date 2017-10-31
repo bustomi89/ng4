@@ -41,7 +41,8 @@ export class DatatableComponent implements OnInit {
     let element = $(this.el.nativeElement.children[0]);
     let options = this.options || {}
 
-
+    // console.log("options "+JSON.stringify(options));
+    
     let toolbar = '';
     if (options.buttons)
       toolbar += 'B';
@@ -59,6 +60,7 @@ export class DatatableComponent implements OnInit {
         // }
       }
     }
+    
 
     options = $.extend(options, {
 
@@ -94,7 +96,8 @@ export class DatatableComponent implements OnInit {
     if (!toolbar) {
       element.parent().find(".dt-toolbar").append('<div class="text-right"><img src="assets/img/logo.png" alt="SmartAdmin" style="width: 111px; margin-top: 3px; margin-right: 10px;"></div>');
     }
-
+    this.detailsFormat = true;
+    
     if(this.detailsFormat){
       let format = this.detailsFormat
       element.on('click', 'td.details-control', function () {

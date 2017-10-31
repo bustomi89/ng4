@@ -1,0 +1,56 @@
+{
+    "data": [
+        {
+            "modified_on": "2017-10-13"  ,
+            "modified_by": "USER",
+            "created_on": "2017-10-10" ,
+            "created_by": "USER",
+            "branch_id": "001",
+            "branch_code": "001",
+            "branch_name": "klinik 1",
+            "description": "klinik 1",
+            "active_status": "1",
+            "branch_level": 1,
+            "postal_code": "1111"
+        },
+        {
+            "modified_on": "2017-10-13"  ,
+            "modified_by": "USER",
+            "created_on": "2017-10-10" ,
+            "created_by": "USER",
+            "branch_id": "002",
+            "branch_code": "002",
+            "branch_name": "klinik 2",
+            "description": "klinik 2",
+            "active_status": "1",
+            "branch_level": 1,
+            "postal_code": "2222"
+        },
+        {
+            "modified_on": "2017-10-13"  ,
+            "modified_by": "USER",
+            "created_on": "2017-10-10" ,
+            "created_by": "USER",
+            "branch_id": "003",
+            "branch_code": "003",
+            "branch_name": "klinik 3",
+            "description": "klinik 3",
+            "active_status": "1",
+            "branch_level": 1,
+            "postal_code": "3333"
+        },
+        {
+            "modified_on": "2017-10-13"  ,
+            "modified_by": "USER",
+            "created_on": "2017-10-10" ,
+            "created_by": "USER",
+            "branch_id": "004",
+            "branch_code": "004",
+            "branch_name": "klinik 4",
+            "description": "klinik 4",
+            "active_status": "1",
+            "branch_level": 1,
+            "postal_code": "4444"
+        }
+    ]
+}

@@ -1,0 +1,59 @@
+<div id="content">
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+    <!-- Main content -->
+        <div class="row">
+          <div class="col-md-2">
+                <a class="btn btn-danger" routerLink="/masterdata/kategori/add"  routerLinkActive="active">
+                  <i class="fa fa-plus"></i>
+                  Add</a> 
+            </div>
+          </div>
+
+      <sa-widget [editbutton]="false" color="blueDark">
+          <header><span class="widget-icon"> <i class="fa fa-table"></i> </span>
+            <h2>Category </h2></header>
+          <div>
+                <div class="widget-body no-padding">
+                  <table class="table table-condenced table-striped table-bordered has-tickbox">
+                    <thead>
+                      <tr>
+                        <th [ngStyle]="{width:'10%'}">Action</th>
+                        <th data-class="expand" [ngStyle]="{width:'10%'}" >category id</th>
+                        <th data-class="expand"  [ngStyle]="{width:'10%'}">category type</th>
+                        <th data-class="expand" [ngStyle]="{width:'10%'}">category name</th>
+
+                        <th data-class="expand" [ngStyle]="{width:'10%'}" >category code</th>
+                        <th data-class="expand"  [ngStyle]="{width:'20%'}">description</th>
+                        <th data-class="expand" [ngStyle]="{width:'10%'}">size</th>
+                        
+                        <th data-class="expand" [ngStyle]="{width:'10%'}" >price</th>
+                        <th data-class="expand"  [ngStyle]="{width:'10%'}">discount</th>
+                      
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr *ngFor="let category of categories">
+                          <td [ngStyle]="{width:'10%'}">
+                              <a class="btn btn-info btn-xs btn-view" routerLink="/masterdata/kategori/show/{{category.category_id}}"  routerLinkActive="active"><i class="fa fa-eye"></i></a> 
+                              <a class="btn btn-success btn-xs btn-view" routerLink="/masterdata/kategori/edit/{{category.category_id}}" routerLinkActive="active"><i class="fa fa-edit"></i></a>
+                              <a class="btn btn-danger btn-xs btn-view" (click)="deleteCategory(category.category_id)"><i class="fa fa-close"></i></a>
+                          </td>
+                          <td>{{category.category_id}}</td>
+                          <td>{{category.category_type}}</td>
+                          <td>{{category.category_name}}</td>
+
+                          <td>{{category.category_code}}</td>
+                          <td>{{category.description}}</td>
+                          <td>{{category.size}}</td>
+
+                          <td>{{category.price}}</td>
+                          <td>{{category.discount}}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+          </div>
+      </sa-widget>
+    </div>
+</div>  
