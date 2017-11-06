@@ -6,19 +6,19 @@ export const routes: Routes = [
   {
     path: '', redirectTo: 'clinic', pathMatch: 'full'
   },
-  {
-    path: 'clinic',
-    loadChildren:'./clinic/clinic.module#ClinicModule',
-  },
+  // {
+  //   path: 'clinic',
+  //   loadChildren:'./clinic/clinic.module#ClinicModule',
+  // },
   {
     path: 'klinik',
     loadChildren:'./klinik/klinik.module#KlinikModule',
   }, 
-  {
-    path: 'category',
-    loadChildren:'./category/category.module#CategoryModule',
+  // {
+  //   path: 'category',
+  //   loadChildren:'./category/category.module#CategoryModule',
      
-  },
+  // },
   {
     path: 'kategori',
     loadChildren:'./kategori/kategori.module#KategoriModule',
